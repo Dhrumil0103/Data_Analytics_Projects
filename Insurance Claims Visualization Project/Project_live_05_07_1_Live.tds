@@ -1,0 +1,587 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0611.2007                               -->
+<datasource formatted-name='federated.13fyyvo0m1x1rc17nt4bf1h9sh1y' inline='true' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+  </document-format-change-manifest>
+  <connection class='federated'>
+    <named-connections>
+      <named-connection caption='Project_live' name='textscan.1byd49c15bo0hc16orwp71cbfqx1'>
+        <connection class='textscan' directory='C:/Users/Rutvi/Downloads' filename='Project_live.csv' password='' server='' />
+      </named-connection>
+    </named-connections>
+    <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1byd49c15bo0hc16orwp71cbfqx1' name='Project_live.csv' table='[Project_live#csv]' type='table'>
+      <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+        <column datatype='string' name='ID' ordinal='0' />
+        <column datatype='date' name='birthdate' ordinal='1' />
+        <column datatype='string' name='marital_status' ordinal='2' />
+        <column datatype='string' name='car_use' ordinal='3' />
+        <column datatype='string' name='gender' ordinal='4' />
+        <column datatype='integer' name='kids_driving' ordinal='5' />
+        <column datatype='string' name='parent' ordinal='6' />
+        <column datatype='string' name='education' ordinal='7' />
+        <column datatype='string' name='car_make' ordinal='8' />
+        <column datatype='string' name='car_model' ordinal='9' />
+        <column datatype='string' name='car types' ordinal='10' />
+        <column datatype='string' name='car_color' ordinal='11' />
+        <column datatype='integer' name='car_year' ordinal='12' />
+        <column datatype='integer' name='claim_freq' ordinal='13' />
+        <column datatype='string' name='coverage_zone' ordinal='14' />
+        <column datatype='string' name='claim_amt' ordinal='15' />
+        <column datatype='string' name='household_income' ordinal='16' />
+        <column datatype='string' name='Column1' ordinal='17' />
+        <column datatype='string' name='car_make_1' ordinal='18' />
+        <column datatype='string' name='types' ordinal='19' />
+      </columns>
+    </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+    <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1byd49c15bo0hc16orwp71cbfqx1' name='Project_live.csv' table='[Project_live#csv]' type='table'>
+      <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+        <column datatype='string' name='ID' ordinal='0' />
+        <column datatype='date' name='birthdate' ordinal='1' />
+        <column datatype='string' name='marital_status' ordinal='2' />
+        <column datatype='string' name='car_use' ordinal='3' />
+        <column datatype='string' name='gender' ordinal='4' />
+        <column datatype='integer' name='kids_driving' ordinal='5' />
+        <column datatype='string' name='parent' ordinal='6' />
+        <column datatype='string' name='education' ordinal='7' />
+        <column datatype='string' name='car_make' ordinal='8' />
+        <column datatype='string' name='car_model' ordinal='9' />
+        <column datatype='string' name='car types' ordinal='10' />
+        <column datatype='string' name='car_color' ordinal='11' />
+        <column datatype='integer' name='car_year' ordinal='12' />
+        <column datatype='integer' name='claim_freq' ordinal='13' />
+        <column datatype='string' name='coverage_zone' ordinal='14' />
+        <column datatype='string' name='claim_amt' ordinal='15' />
+        <column datatype='string' name='household_income' ordinal='16' />
+        <column datatype='string' name='Column1' ordinal='17' />
+        <column datatype='string' name='car_make_1' ordinal='18' />
+        <column datatype='string' name='types' ordinal='19' />
+      </columns>
+    </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+    <metadata-records>
+      <metadata-record class='capability'>
+        <remote-name />
+        <remote-type>0</remote-type>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias />
+        <aggregation>Count</aggregation>
+        <contains-null>true</contains-null>
+        <attributes>
+          <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+          <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+          <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+          <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+          <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+          <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+          <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+        </attributes>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>ID</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[ID]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>ID</remote-alias>
+        <ordinal>0</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>birthdate</remote-name>
+        <remote-type>133</remote-type>
+        <local-name>[birthdate]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>birthdate</remote-alias>
+        <ordinal>1</ordinal>
+        <local-type>date</local-type>
+        <aggregation>Year</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>marital_status</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[marital_status]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>marital_status</remote-alias>
+        <ordinal>2</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>car_use</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[car_use]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>car_use</remote-alias>
+        <ordinal>3</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>gender</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[gender]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>gender</remote-alias>
+        <ordinal>4</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>kids_driving</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[kids_driving]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>kids_driving</remote-alias>
+        <ordinal>5</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>parent</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[parent]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>parent</remote-alias>
+        <ordinal>6</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>education</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[education]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>education</remote-alias>
+        <ordinal>7</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>car_make</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[car_make]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>car_make</remote-alias>
+        <ordinal>8</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>car_model</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[car_model]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>car_model</remote-alias>
+        <ordinal>9</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>car types</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[car types]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>car types</remote-alias>
+        <ordinal>10</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>car_color</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[car_color]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>car_color</remote-alias>
+        <ordinal>11</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>car_year</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[car_year]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>car_year</remote-alias>
+        <ordinal>12</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>claim_freq</remote-name>
+        <remote-type>20</remote-type>
+        <local-name>[claim_freq]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>claim_freq</remote-alias>
+        <ordinal>13</ordinal>
+        <local-type>integer</local-type>
+        <aggregation>Sum</aggregation>
+        <contains-null>true</contains-null>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>coverage_zone</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[coverage_zone]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>coverage_zone</remote-alias>
+        <ordinal>14</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>claim_amt</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[claim_amt]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>claim_amt</remote-alias>
+        <ordinal>15</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>household_income</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[household_income]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>household_income</remote-alias>
+        <ordinal>16</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>Column1</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[Column1]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>Column1</remote-alias>
+        <ordinal>17</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <approx-count>1</approx-count>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>car_make_1</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[car_make_1]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>car_make_1</remote-alias>
+        <ordinal>18</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+      <metadata-record class='column'>
+        <remote-name>types</remote-name>
+        <remote-type>129</remote-type>
+        <local-name>[types]</local-name>
+        <parent-name>[Project_live.csv]</parent-name>
+        <remote-alias>types</remote-alias>
+        <ordinal>19</ordinal>
+        <local-type>string</local-type>
+        <aggregation>Count</aggregation>
+        <scale>1</scale>
+        <width>1073741823</width>
+        <contains-null>true</contains-null>
+        <collation flag='0' name='LEN_RGB' />
+        <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+      </metadata-record>
+    </metadata-records>
+  </connection>
+  <aliases enabled='yes' />
+  <column caption='Driver Age' datatype='integer' datatype-customized='true' name='[Calculation_858498723337588736]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='INT((TODAY() - [birthdate])/365)' />
+  </column>
+  <column aggregation='None' caption='Claim Amount (bin)' datatype='integer' name='[Claim Amount (bin)]' role='dimension' type='quantitative'>
+    <calculation class='bin' decimals='3' formula='[claim_amt - Split 1]' peg='0' size='1000' />
+  </column>
+  <column caption='Claim Amount (copy)' datatype='integer' datatype-customized='true' name='[Claim Amount (copy)_858498723342352385]' role='measure' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[claim_amt]'>
+    <calculation class='tableau' formula='INT(SPLIT( [claim_amt], &quot;$&quot;, 2 ))' />
+  </column>
+  <column datatype='string' name='[Coverage Zone (group)]' role='dimension' type='nominal'>
+    <calculation class='categorical-bin' column='[coverage_zone]' new-bin='true'>
+      <bin default-name='true' value='&quot;Highly Rural &amp; Rural&quot;'>
+        <value>&quot;Highly Rural&quot;</value>
+        <value>&quot;Rural&quot;</value>
+      </bin>
+      <bin default-name='true' value='&quot;Highly Urban &amp; Urban&quot;'>
+        <value>&quot;Highly Urban&quot;</value>
+        <value>&quot;Urban&quot;</value>
+      </bin>
+    </calculation>
+  </column>
+  <column aggregation='None' caption='Driver Age (bin)' datatype='integer' name='[Driver Age (bin)]' role='dimension' type='quantitative'>
+    <calculation class='bin' decimals='0' formula='[Calculation_858498723337588736]' peg='0' size='1' />
+  </column>
+  <column aggregation='None' caption='Income Buckets' datatype='integer' name='[Household Income - Split 1 (bin)]' role='dimension' type='ordinal'>
+    <calculation class='bin' decimals='4' formula='[household_income - Split 1]' peg='0' size='10000' />
+  </column>
+  <column datatype='string' name='[ID]' role='dimension' type='nominal' />
+  <_.fcp.ObjectModelTableType.true...column caption='Project_live.csv' datatype='table' name='[__tableau_internal_object_id__].[Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921]' role='measure' type='quantitative' />
+  <column caption='Birthdate' datatype='date' name='[birthdate]' role='dimension' type='ordinal' />
+  <column caption='Car Types' datatype='string' name='[car types]' role='dimension' type='nominal' />
+  <column caption='Car Color' datatype='string' name='[car_color]' role='dimension' type='nominal' />
+  <column caption='Car Make' datatype='string' name='[car_make]' role='dimension' type='nominal' />
+  <column caption='Car Make 1' datatype='string' name='[car_make_1]' role='dimension' type='nominal' />
+  <column caption='Car Model' datatype='string' name='[car_model]' role='dimension' type='nominal' />
+  <column caption='Car Use' datatype='string' name='[car_use]' role='dimension' type='nominal' />
+  <column caption='Car Year' datatype='integer' name='[car_year]' role='dimension' type='quantitative' />
+  <column aggregation='Count' caption='Claim Amount' datatype='integer' datatype-customized='true' name='[claim_amt - Split 1]' role='measure' type='quantitative' user:SplitFieldIndex='1' user:SplitFieldOrigin='[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[claim_amt]'>
+    <calculation class='tableau' formula='INT(SPLIT( [claim_amt], &quot;$&quot;, 2 ))' />
+  </column>
+  <column caption='Claim Amt' datatype='string' default-role='measure' default-type='quantitative' name='[claim_amt]' role='dimension' type='nominal' />
+  <column caption='Claim Freq' datatype='integer' name='[claim_freq]' role='measure' type='quantitative' />
+  <column caption='Coverage Zone' datatype='string' name='[coverage_zone]' role='dimension' type='nominal' />
+  <column caption='Education' datatype='string' name='[education]' role='dimension' type='nominal' />
+  <column caption='Gender' datatype='string' name='[gender]' role='dimension' type='nominal' />
+  <column aggregation='Sum' caption='Household Income - Split 1' datatype='real' name='[household_income - Split 1]' role='dimension' type='ordinal' user:SplitFieldIndex='2' user:SplitFieldOrigin='[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[household_income]'>
+    <calculation class='tableau' formula='FLOAT( SPLIT( [household_income], &quot;$&quot;, 2 ) )' />
+  </column>
+  <column caption='Household Income' datatype='string' name='[household_income]' role='dimension' type='nominal' />
+  <column caption='Kids Driving' datatype='integer' name='[kids_driving]' role='measure' type='quantitative' />
+  <column caption='Marital Status' datatype='string' name='[marital_status]' role='dimension' type='nominal' />
+  <column caption='Parent' datatype='string' name='[parent]' role='dimension' type='nominal' />
+  <column caption='Types' datatype='string' name='[types]' role='dimension' type='nominal' />
+  <column-instance column='[claim_amt - Split 1]' derivation='Avg' name='[avg:claim_amt - Split 1:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[ID]' derivation='Count' name='[cnt:ID:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[claim_amt - Split 1]' derivation='Count' name='[cnt:claim_amt - Split 1:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[claim_amt]' derivation='Count' name='[cnt:claim_amt:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[ID]' derivation='Count' name='[diff:cnt:ID:qk]' pivot='key' type='quantitative'>
+    <table-calc diff-options='Relative' ordering-type='Rows' type='Difference'>
+      <address>
+        <value>-1</value>
+      </address>
+    </table-calc>
+  </column-instance>
+  <column-instance column='[Driver Age (bin)]' derivation='None' name='[none:Driver Age (bin):qk]' pivot='key' type='quantitative' />
+  <column-instance column='[car types]' derivation='None' name='[none:car types:nk]' pivot='key' type='nominal' />
+  <column-instance column='[car_use]' derivation='None' name='[none:car_use:nk]' pivot='key' type='nominal' />
+  <column-instance column='[claim_amt - Split 1]' derivation='None' name='[none:claim_amt - Split 1:qk]' pivot='key' type='quantitative' />
+  <column-instance column='[education]' derivation='None' name='[none:education:nk]' pivot='key' type='nominal' />
+  <column-instance column='[claim_amt - Split 1]' derivation='Sum' name='[sum:claim_amt - Split 1:qk]' pivot='key' type='quantitative' />
+  <group caption='Coverage Zone Set 2' name='[Coverage Zone Set 2]' name-style='unqualified' user:ui-builder='filter-group'>
+    <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+      <groupfilter function='member' level='[coverage_zone]' member='&quot;Highly Urban&quot;' />
+      <groupfilter function='member' level='[coverage_zone]' member='&quot;Urban&quot;' />
+    </groupfilter>
+  </group>
+  <group caption='Coverage Zone Set' name='[Coverage Zone Set]' name-style='unqualified' user:ui-builder='filter-group'>
+    <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+      <groupfilter function='member' level='[coverage_zone]' member='&quot;Highly Rural&quot;' />
+      <groupfilter function='member' level='[coverage_zone]' member='&quot;Rural&quot;' />
+    </groupfilter>
+  </group>
+  <group delimiter=',' name='[Set 1]' name-style='unqualified'>
+    <groupfilter function='union'>
+      <groupfilter field='[Coverage Zone Set]' function='reference' />
+      <groupfilter field='[Coverage Zone Set 2]' function='reference' />
+    </groupfilter>
+  </group>
+  <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+  <style>
+    <style-rule element='mark'>
+      <encoding attr='color' field='[:Measure Names]' type='palette'>
+        <map to='#4e79a7'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[avg:claim_amt - Split 1:qk]&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[cnt:claim_amt - Split 1:qk]&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[none:claim_amt - Split 1:qk]&quot;</bucket>
+        </map>
+        <map to='#4e79a7'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[sum:claim_amt - Split 1:qk]&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[cnt:ID:qk]&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[diff:cnt:ID:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[cnt:claim_amt:qk]&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[none:Driver Age (bin):qk]&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[none:car_use:nk]' type='palette'>
+        <map to='#9467bd'>
+          <bucket>&quot;Private&quot;</bucket>
+        </map>
+        <map to='#d62728'>
+          <bucket>&quot;Commercial&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[Coverage Zone (group)]' type='palette'>
+        <map to='#59a14f'>
+          <bucket>&quot;Highly Urban &amp; Urban&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;Highly Rural &amp; Rural&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;Suburban&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[none:education:nk]' type='palette'>
+        <map to='#76b7b2'>
+          <bucket>&quot;PhD&quot;</bucket>
+        </map>
+        <map to='#b07aa1'>
+          <bucket>&quot;Masters&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;Bachelors&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;High School&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[none:car types:nk]' type='palette'>
+        <map to='#4e79a7'>
+          <bucket>&quot;Laxurious&quot;</bucket>
+        </map>
+        <map to='#59a14f'>
+          <bucket>&quot;Sedan&quot;</bucket>
+        </map>
+        <map to='#76b7b2'>
+          <bucket>&quot;Pickup&quot;</bucket>
+        </map>
+        <map to='#a4a4d5'>
+          <bucket>&quot;Van&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;Mini Van&quot;</bucket>
+        </map>
+        <map to='#eb1e2c'>
+          <bucket>&quot;SUV&quot;</bucket>
+        </map>
+        <map to='#edc948'>
+          <bucket>&quot;Sports Car&quot;</bucket>
+        </map>
+        <map to='#f28e2b'>
+          <bucket>&quot;Mini Truck&quot;</bucket>
+        </map>
+      </encoding>
+    </style-rule>
+  </style>
+  <semantic-values>
+    <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+  </semantic-values>
+  <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    <objects>
+      <object caption='Project_live.csv' id='Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921'>
+        <properties context=''>
+          <relation connection='textscan.1byd49c15bo0hc16orwp71cbfqx1' name='Project_live.csv' table='[Project_live#csv]' type='table'>
+            <columns character-set='windows-1252' header='yes' locale='en_IN' separator=','>
+              <column datatype='string' name='ID' ordinal='0' />
+              <column datatype='date' name='birthdate' ordinal='1' />
+              <column datatype='string' name='marital_status' ordinal='2' />
+              <column datatype='string' name='car_use' ordinal='3' />
+              <column datatype='string' name='gender' ordinal='4' />
+              <column datatype='integer' name='kids_driving' ordinal='5' />
+              <column datatype='string' name='parent' ordinal='6' />
+              <column datatype='string' name='education' ordinal='7' />
+              <column datatype='string' name='car_make' ordinal='8' />
+              <column datatype='string' name='car_model' ordinal='9' />
+              <column datatype='string' name='car types' ordinal='10' />
+              <column datatype='string' name='car_color' ordinal='11' />
+              <column datatype='integer' name='car_year' ordinal='12' />
+              <column datatype='integer' name='claim_freq' ordinal='13' />
+              <column datatype='string' name='coverage_zone' ordinal='14' />
+              <column datatype='string' name='claim_amt' ordinal='15' />
+              <column datatype='string' name='household_income' ordinal='16' />
+              <column datatype='string' name='Column1' ordinal='17' />
+              <column datatype='string' name='car_make_1' ordinal='18' />
+              <column datatype='string' name='types' ordinal='19' />
+            </columns>
+          </relation>
+        </properties>
+      </object>
+    </objects>
+  </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+</datasource>
