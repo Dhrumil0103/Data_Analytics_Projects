@@ -371,8 +371,17 @@
     </metadata-records>
   </connection>
   <aliases enabled='yes' />
+  <column caption='Occupation' datatype='string' name='[Calculation_698902412538757120]' role='dimension' type='nominal'>
+    <calculation class='tableau' formula='IF [education]=&apos;High School&apos; THEN &apos;Student&apos;&#13;&#10;ELSEIF [education]=&apos;Bachelors&apos; THEN &apos;Manager&apos;&#13;&#10;ELSEIF [education]=&apos;Masters&apos; THEN &apos;Lawver&apos;&#13;&#10;ELSE &apos;Doctor&apos;&#13;&#10;END' />
+  </column>
+  <column caption='Car Age' datatype='integer' name='[Calculation_698902412545511425]' role='measure' type='quantitative'>
+    <calculation class='tableau' formula='2023 - [car_year]' />
+  </column>
   <column caption='Driver Age' datatype='integer' datatype-customized='true' name='[Calculation_858498723337588736]' role='measure' type='quantitative'>
     <calculation class='tableau' formula='INT((TODAY() - [birthdate])/365)' />
+  </column>
+  <column aggregation='None' caption='Car Age (bin)' datatype='integer' name='[Car Age (bin)]' role='dimension' type='ordinal'>
+    <calculation class='bin' decimals='-1' formula='[Calculation_698902412545511425]' peg='0' size='7.5' />
   </column>
   <column aggregation='None' caption='Claim Amount (bin)' datatype='integer' name='[Claim Amount (bin)]' role='dimension' type='quantitative'>
     <calculation class='bin' decimals='3' formula='[claim_amt - Split 1]' peg='0' size='1000' />
@@ -435,6 +444,7 @@
       </address>
     </table-calc>
   </column-instance>
+  <column-instance column='[Calculation_698902412538757120]' derivation='None' name='[none:Calculation_698902412538757120:nk]' pivot='key' type='nominal' />
   <column-instance column='[Driver Age (bin)]' derivation='None' name='[none:Driver Age (bin):qk]' pivot='key' type='quantitative' />
   <column-instance column='[car types]' derivation='None' name='[none:car types:nk]' pivot='key' type='nominal' />
   <column-instance column='[car_use]' derivation='None' name='[none:car_use:nk]' pivot='key' type='nominal' />
@@ -459,7 +469,7 @@
       <groupfilter field='[Coverage Zone Set 2]' function='reference' />
     </groupfilter>
   </group>
-  <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-structure='true' />
+  <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-aliased-fields='true' show-hidden-fields='true' show-structure='true' />
   <style>
     <style-rule element='mark'>
       <encoding attr='color' field='[:Measure Names]' type='palette'>
@@ -488,23 +498,18 @@
           <bucket>&quot;[federated.13fyyvo0m1x1rc17nt4bf1h9sh1y].[none:Driver Age (bin):qk]&quot;</bucket>
         </map>
       </encoding>
-      <encoding attr='color' field='[none:car_use:nk]' type='palette'>
-        <map to='#9467bd'>
-          <bucket>&quot;Private&quot;</bucket>
+      <encoding attr='color' field='[none:Calculation_698902412538757120:nk]' type='palette'>
+        <map to='#4e79a7'>
+          <bucket>&quot;Doctor&quot;</bucket>
         </map>
-        <map to='#d62728'>
-          <bucket>&quot;Commercial&quot;</bucket>
-        </map>
-      </encoding>
-      <encoding attr='color' field='[Coverage Zone (group)]' type='palette'>
-        <map to='#59a14f'>
-          <bucket>&quot;Highly Urban &amp; Urban&quot;</bucket>
+        <map to='#76b7b2'>
+          <bucket>&quot;Student&quot;</bucket>
         </map>
         <map to='#e15759'>
-          <bucket>&quot;Highly Rural &amp; Rural&quot;</bucket>
+          <bucket>&quot;Manager&quot;</bucket>
         </map>
-        <map to='#e15759'>
-          <bucket>&quot;Suburban&quot;</bucket>
+        <map to='#f28e2b'>
+          <bucket>&quot;Lawver&quot;</bucket>
         </map>
       </encoding>
       <encoding attr='color' field='[none:education:nk]' type='palette'>
@@ -519,6 +524,25 @@
         </map>
         <map to='#f28e2b'>
           <bucket>&quot;High School&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[Coverage Zone (group)]' type='palette'>
+        <map to='#59a14f'>
+          <bucket>&quot;Highly Urban &amp; Urban&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;Highly Rural &amp; Rural&quot;</bucket>
+        </map>
+        <map to='#e15759'>
+          <bucket>&quot;Suburban&quot;</bucket>
+        </map>
+      </encoding>
+      <encoding attr='color' field='[none:car_use:nk]' type='palette'>
+        <map to='#9467bd'>
+          <bucket>&quot;Private&quot;</bucket>
+        </map>
+        <map to='#d62728'>
+          <bucket>&quot;Commercial&quot;</bucket>
         </map>
       </encoding>
       <encoding attr='color' field='[none:car types:nk]' type='palette'>
@@ -552,6 +576,43 @@
   <semantic-values>
     <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
   </semantic-values>
+  <field-sort-info field-sort-order-type='custom-order'>
+    <field-sort-custom-order field='ID' />
+    <field-sort-custom-order field='birthdate' />
+    <field-sort-custom-order field='marital_status' />
+    <field-sort-custom-order field='car_use' />
+    <field-sort-custom-order field='gender' />
+    <field-sort-custom-order field='kids_driving' />
+    <field-sort-custom-order field='parent' />
+    <field-sort-custom-order field='education' />
+    <field-sort-custom-order field='Calculation_698902412538757120' />
+    <field-sort-custom-order field='car_make' />
+    <field-sort-custom-order field='car_model' />
+    <field-sort-custom-order field='car types' />
+    <field-sort-custom-order field='car_color' />
+    <field-sort-custom-order field='car_year' />
+    <field-sort-custom-order field='Calculation_698902412545511425' />
+    <field-sort-custom-order field='claim_freq' />
+    <field-sort-custom-order field='coverage_zone' />
+    <field-sort-custom-order field='claim_amt' />
+    <field-sort-custom-order field='household_income' />
+    <field-sort-custom-order field='Column1' />
+    <field-sort-custom-order field='car_make_1' />
+    <field-sort-custom-order field='types' />
+    <field-sort-custom-order field='Calculation_858498723337588736' />
+    <field-sort-custom-order field='Claim Amount (copy)_858498723342352385' />
+    <field-sort-custom-order field='claim_amt - Split 1' />
+    <field-sort-custom-order field='household_income - Split 1' />
+    <field-sort-custom-order field='Claim Amount (bin)' />
+    <field-sort-custom-order field='Coverage Zone (group)' />
+    <field-sort-custom-order field='Driver Age (bin)' />
+    <field-sort-custom-order field='Household Income - Split 1 (bin)' />
+    <field-sort-custom-order field='Geometry (generated)' />
+    <field-sort-custom-order field='Latitude (generated)' />
+    <field-sort-custom-order field='Longitude (generated)' />
+    <field-sort-custom-order field=':Measure Names' />
+    <field-sort-custom-order field='Multiple Values' />
+  </field-sort-info>
   <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
     <objects>
       <object caption='Project_live.csv' id='Project_live.csv_5D1D467067AC4EFB9BC2A4DBF8856921'>
